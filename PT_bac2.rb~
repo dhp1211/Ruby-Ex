@@ -1,0 +1,26 @@
+#!/usr/bun/ruby
+
+puts ""
+puts "GIAI PHUONG TRINH BAC 2: Ax^2+By+C=0"
+print "Nhap so A: "
+a = gets.to_i
+print "Nhap so B: "
+b = gets.to_i
+print "Nhap so C: "
+c = gets.to_i
+delta = (b*b) - (4*a*c)
+if delta < 0
+	puts "Phuong trinh vo nghiem!"
+	puts ""
+elsif delta == 0
+	nghiem = ((-b) / (2*a)).to_i
+	puts "Phuong trinh co mot nghiem duy nhat la x= #{nghiem}"
+	puts ""
+else
+	x1 = ( ((-b) - Math.sqrt(delta)) / (2*a) )
+    x2 = ( ((-b) + Math.sqrt(delta)) / (2*a) )
+    puts "Phuong trinh co hai nghiem phan biet:"
+    puts "x1= #{x1}"
+    puts "x2= #{x2}"
+    puts ""
+end
