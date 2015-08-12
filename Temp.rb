@@ -1,5 +1,4 @@
 #!/usr/bun/ruby
 
-var = "exit "
-
-puts var == "exit"
+var="exit chung"
+puts var.tr("ex","**")
