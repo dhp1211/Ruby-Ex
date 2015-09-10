@@ -1,47 +1,44 @@
 #!/usr/bun/ruby
 
-
-puts "Nhap text. Nhap \"exit\" de ket thuc!" 
-def Input
-	check= ""
-	var = ""
-	begin
-		var +=check
-		print "Nhap:"
-		check = gets.to_s
-	end while not(check.include?"exit")
-	return var
-end
-def WriteFile(var)
-	wFile = File.new("input.txt","w+")
-	if wFile
-		wFile.syswrite(var)
-	else
-		puts "Unable to open file!"
+def find_frequence(sentence, word)
+	sentence = sentence.downcase
+	word = word.downcase
+	frequence = 0
+	while sentence.include? word
+		frequence += 1
+		sentence = sentence.sub word,""
 	end
+	return frequence
 end
-def ReadFile()
-	#rFile = File.open("input.txt","r")
-	#if rFile
-	#	content = rFile.sysread()
-	#	puts content
-	#else
-	#	puts "Unable to open file"
-	#end
-	#return content
-	content=" "
-	puts "Ket qua:"
-	rFile = File.open("input.txt","r")
-	while (line = rFile.gets)
-		content= "#{line}"
-		content= content.gsub("On","**")
-		content= content.gsub("on","**")
-		content= content.gsub("Am","**")
-		content= content.gsub("am","**")
+def find_frequence1(sentence, word)
+	sentence = sentence.downcase
+	word = word.downcase
+	sentence_size = sentence.size
+	sentence.gsub!word, ""
+	sentence_size_handle = sentence.size
+	number_of_word = sentence_size - sentence_size_handle
+	frequence = number_of_word / word.size
+end
 
-		puts content
-	end
+
+def sort_string(string)
+	array = string.split(" ")
+	array.sort_by!{|item| item.size}
+	p array
+	p array.reverse
 end
-a = Input()
-WriteFile a
-ReadFile()
+
+def sort_string1(string)
+	array = string.split(" ")
+	array = array.sort! { |a,b| a.size <=> b.size}
+	sentence = array.join(" ")
+	p array
+end
+
+def check_reverse(string)
+	string = string.downcase
+	string.gsub!" ",""
+	reverse = string.reverse
+	return string.eql? reverse
+end
+

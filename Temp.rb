@@ -1,4 +1,2 @@
 #!/usr/bun/ruby
-
-var="exit chung"
-puts var.tr("ex","**")
+p 2*1.1

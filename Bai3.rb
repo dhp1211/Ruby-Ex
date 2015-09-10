@@ -39,7 +39,7 @@ class Fraction
 	end
 end
 
-num1 = Fraction.new(1,2)
+num1 = Fraction.new(1,-2)
 num2 = Fraction.new(1,3)
 num1.minus(num2)
 print "Ket qua tru 2 phan so la:"

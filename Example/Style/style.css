@@ -1,0 +1,38 @@
+.modal-contents
+{
+	padding: 3%;
+}
+.form-login
+{
+	border: 1px solid lightgray;
+	background-color: #EEEEEE;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	padding: 3%;
+}
+.checkbox
+{
+	padding: 1px;
+}
+.hint-label
+{
+	color: gray;
+}
+.btn-max
+{
+	width: 100%;
+	margin-bottom: 3%;
+}
+.btn-login
+{
+	background-color: #009900;
+	color: white;
+}
+.check-success
+{
+	color: green;
+}
+.hint-label-size
+{
+	font-size: 80%
+}

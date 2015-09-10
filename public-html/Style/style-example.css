@@ -1,0 +1,104 @@
+#header
+{
+	width: 100%;
+	background-color: #222222;
+	color: white;
+	height: 162px;
+}
+#logo{
+	margin-top: 2%;
+}
+#header h1 {
+	margin-bottom: 0px;
+}
+#premium{
+	margin-top: 1px;
+	font-size: xx-small;
+	color: gray;
+}
+#header h1 span
+{
+	color: rgb(0,183,251);
+}
+#logo a
+{
+	text-decoration: none;
+	color: white;
+}
+#menu
+{
+	float: right;
+	margin-right: 0;
+	margin-top: 2.8%;
+
+}
+.nav-tabs
+{
+	border-bottom: none;
+}
+.nav-tabs li.active a
+{
+	border:none;
+	background-color: rgb(60,60,60);
+}
+.container
+{
+	width: 100%;
+	margin-top: -2%;
+}
+.block-center
+{
+	width: 80%;
+	margin: 0 auto;
+}
+.block-container
+{
+	width: 82%;
+	margin: 0 auto;
+}
+.block-logo {
+	float: left;
+}
+.block-logo span#premium {
+	display: block;
+	text-align: right;
+}
+.block-slide
+{
+	background-color: black;
+	color: white;
+	height:400px;
+	padding: 10px;
+	text-align: center;
+	padding-top: 150px;
+}
+#slider-8
+{
+	padding-right: 0;
+}
+#slider-4 
+{
+	padding-left: 0;
+}
+.carousel-inner
+{
+	height: 400px;
+}
+.carousel-indicators
+{
+	text-align: right;
+	margin-left: -22%;
+	margin-bottom: -5%;
+}
+.carousel-indicators li
+{
+	background-color: gray;
+}
+.carousel-indicators .active 
+{
+	background-color: black;
+}
+hr
+{
+	border-color: darkgray;
+}
