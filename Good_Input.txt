@@ -1,6 +1,6 @@
-BOOK OF LIFE, 10, 10$+ 0.0$
-IMPORTED WATER, 20, 100$+ 5.0$
-OPPO NEO 5, 5, 200$+ 20.0$
-IMPORTED LUMIA 520, 5, 300.5$+ 45.08$
-Sum tax:425.4$
-Sum:5027.9$
+BOOK OF LIFE--- 10--- 14$ + 0% (0.0$)
+IMPORTED WATER--- 20--- 100$ + 5% (5.0$)
+OPPO NEO 5--- 5--- 14$ + 10% (1.4$)
+IMPORTED LUMIA 520--- 5--- 300.5$ + 15% (45.08$)
+Sum tax:332.4$
+Sum:4044.9$
